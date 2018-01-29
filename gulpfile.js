@@ -1,5 +1,4 @@
 var autoprefixer       = require('gulp-autoprefixer');
-var beeper             = require('beeper');
 var browserSync        = require('browser-sync');
 var cache              = require('gulp-cache');
 var cleanCSS           = require('gulp-clean-css');
@@ -25,7 +24,6 @@ var onError = function(err) {
       title:    "Gulp error in " + err.plugin,
       message:  err.toString()
     })(err);
-    beeper(3);
     this.emit('end');
     gutil.log(gutil.colors.red(err));
 };
