@@ -35,7 +35,6 @@ gulp.task('styles', function() {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(sass({
-      indentedSyntax: true,
       includePaths: ['node_modules']
     }))
     .pipe(autoprefixer({
