@@ -1,0 +1,19 @@
+form.form.s-100.l-80(action="" name="jkForm" method="post")
+    .form-item.m-40.s-100
+        h3 CONTACTANOS
+    .form-item.m-60.s-hide
+    .form-item.s-100
+        input#text1.required(type="text" name="nombre" placeholder="Nombre, particular o empresa(*)")
+    .form-item.s-100.m-50
+        input#tel1.required(type="tel" name="celular" placeholder="Teléfono(*)")
+    .form-item.s-100.m-50
+        input#email1.required(type="email" name="email" placeholder="E-mail(*)")
+    .form-item.s-100
+        textarea#textarea1(name="mensaje" placeholder="Mensaje" rows="5")
+
+    .form-item.s-100
+        input#submit1.form-button(type="submit" value="Enviar")
+
+.jk-container.s-flex-center.contact-message.hide
+  h3.jk-item MUCHAS GRACIAS
+  h4.jk-item EN BREVE NOS COMUNICAREMOS CON VOS

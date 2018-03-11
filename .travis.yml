@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "9.5.0"
+
+sudo: false
+
+branches:
+  only:
+    - master
+
+install:
+  - npm install
+
+script:
+  - echo "Building..."
+  - ls -l .
+  - NODE_ENV=production npm run build
+
+after_success:
+  - ls -l ./build
+  - npm run deploy
+  - surge -p ./build --domain efectoweb.surge.sh

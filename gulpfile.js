@@ -1,4 +1,5 @@
 var autoprefixer       = require('gulp-autoprefixer');
+var beeper             = require('beeper');
 var browserSync        = require('browser-sync');
 var cache              = require('gulp-cache');
 var cleanCSS           = require('gulp-clean-css');
@@ -24,6 +25,7 @@ var onError = function(err) {
       title:    "Gulp error in " + err.plugin,
       message:  err.toString()
     })(err);
+    beeper(0);
     this.emit('end');
     gutil.log(gutil.colors.red(err));
 };
@@ -69,11 +71,11 @@ gulp.task('scripts', function(callback) {
 
 gulp.task('images', function() {
   gulp.src('img/**/*')
-  .pipe(cache(imagemin({
-    optimizationLevel: 3,
-    progressive: true,
-    interlaced: true
-  })))
+  // .pipe(cache(imagemin({
+    // optimizationLevel: 3,
+    // progressive: true,
+    // interlaced: true
+  // })))
   .pipe(gulp.dest('build/img/'));
 });
 
@@ -82,12 +84,22 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('build/fonts/'));
 });
 
+gulp.task('robots', function() {
+  gulp.src('./robots.txt')
+    .pipe(gulp.dest('build/'));
+});
+
+gulp.task('sitemap', function() {
+  gulp.src('./sitemap.xml')
+    .pipe(gulp.dest('build/'));
+});
+
 gulp.task('default', function() {
   console.log("Use 'gulp setup' command to initialize the project files");
 });
 
 gulp.task('setup', function() {
-  gulp.start('styles', 'templates', 'scripts', 'images', 'fonts');
+  gulp.start('styles', 'templates', 'scripts', 'images', 'fonts', 'robots', 'sitemap');
 });
 
 gulp.task('watch', ['setup'], function() {

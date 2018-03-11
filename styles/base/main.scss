@@ -1,0 +1,24 @@
+@import 'jk/jk.scss'; //contiene framework JK y fuentes descargadas
+@import 'reset/reset.scss'; //resetea todos los estilos
+@import 'icomoon/icomoon.scss'; //fuentes de iconos
+
+
+// SCSS GLOABLES
+
+// @import 'navbar.scss';
+@import 'footer.scss';
+
+// FUENTES DISPONIBLES: 'Open Sans'
+
+
+// ESTILOS GLOBALES
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    padding:10px 0;
+    @media screen and (min-width:getBreakpoint(l) ){
+        padding-bottom: 50px
+    }
+}

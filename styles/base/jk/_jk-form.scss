@@ -1,0 +1,55 @@
+
+.jk-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0;
+    padding: 5px 15px;
+    @media screen and (min-width:getBreakpoint(l) ){
+        margin:40px 0;
+    }
+    .form-item{
+        position: relative;
+    }
+    
+    textarea,
+    input[type="text"], 
+    input[type="email"], 
+    input[type="password"],
+    input[type = "tel"],
+    select{
+        
+        position: relative;
+        z-index: 10;
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom:1px solid white;
+        width: 100%;
+        border-radius: 2px;
+        padding: 10px 0;
+        font-size: 18px;
+        
+        margin:15px;
+        color: white;
+
+        @media screen and (min-width:getBreakpoint(l) ){
+            font-size: 22px;
+        }
+        &::placeholder { color:white;}
+        
+        option{
+            color:black;
+            background-color: transparent;    
+        }
+    }
+    .form-button{
+        background-color: getColor(blue,0);
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+
+        border: none;
+        padding:15px;
+    }
+}

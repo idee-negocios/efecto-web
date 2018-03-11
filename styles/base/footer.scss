@@ -1,0 +1,97 @@
+.footer{
+    background: url("../img/footer.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 15px 0;
+    // background-color: red;
+    clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    @media screen and (min-width:getBreakpoint(m) ){
+    }
+    @media screen and (min-width:getBreakpoint(l) ){
+        clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    }
+    .contacto{
+        padding:0;
+        margin:0;
+        .title{
+            text-align: center;
+            font-family: "Open Sans";
+            color: white;
+            h3{
+                font-size: 22px;
+                font-weight:700;
+                padding: 15px;
+            }
+            @media screen and (min-width:getBreakpoint(m) ){
+                h3{
+                    font-size: 30px;
+                }
+            }
+            @media screen and (min-width:getBreakpoint(l) ){
+        
+            }
+        }
+        .description{
+            color:white;
+            p{
+                font-size: 16px;
+                font-style: italic;
+            }
+            @media screen and (min-width:getBreakpoint(m) ){
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+            @media screen and (min-width:getBreakpoint(l) ){
+        
+            }
+        }
+    }
+
+    .footer-bottom{
+        padding-bottom: 30px;
+        .ew{
+            img{
+                height: 50px;
+                width: auto;
+            }
+        }
+
+        .img,.tel,.facebook,.mail{
+            padding:10px;
+            flex-wrap: nowrap;
+            p{
+                display: inline;
+                font-size: 18px;
+                color:white;
+            }
+            a{
+                display: inline;
+                color:white;
+                font-size:20px;
+                margin:5px;
+            }
+        }
+        .tel{
+            .icon-phone{
+
+            }
+
+        }
+        .facebook{
+            .icon-facebook{
+                color:black;
+                font-size: 14px;
+                background-color: white;
+                padding:5px;
+                border-radius: 50%;
+            }
+        }
+        .mail{
+            .icon-mail{
+
+            }
+        }
+    }
+}

@@ -1,12 +1,206 @@
 extends ../templates/main.pug
 
 block title
-  | Title
+  | EFECTO WEB | Marketing digital Mendoza
 
 block content
-  .container
-    .card
-      .card-header IDEE Negocios
-      .card-body
-        p.m-0.content Content
+  header
+    section.header-container
+      .jk-container.header.s-flex-center.full
+        .jk-item.img.s-100.s-flex-center
+          img(src="img/index/logo_header.png", alt="Logo Efecto Web")
+        .jk-item.title.s-95.m-100.l-65
+          h1 MARKETING DIGITAL Y DESARROLLO WEB EN MENDOZA
+        .jk-item.description.s-90.m-90.l-55
+          h2 Iniciá tu negocio en el mundo del marketing digital. Desarrollemos juntos una estrategia y una identidad para crear tu propia página web. Adaptate, hacete visible, ponete online.
+    .arrow-container.jk-container.s-flex-center
+      .jk-item.arrow
+        a(href="#web")
+          img(src="img/index/flechas.png", alt="arrow")
+    
+    main
+      section.web-container
+        .jk-container.web#web.s-main-space-around
+          .jk-item.title.s-100.no-padding
+            h3 TU WEB TRABAJA POR VOS
 
+        .jk-container.web.s-main-space-around.s-hide
+          .jk-item.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon1.png", alt="POSICIONAMIENTO SEO")
+            .jk-item.box-title
+              h4 POSICIONAMIENTO SEO
+            .jk-item.box-description
+              p Aumenta el 50% de tus ventas al aparecer en los primeros 3 lugares de los resultados de búsqueda en el momento exacto en que tus potenciales clientes buscan lo que vos ofrecés
+          .jk-item.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon2.png", alt="DISEÑO CREATIVO")
+            .jk-item.box-title
+              h4 DISEÑO CREATIVO
+            .jk-item.box-description
+              p El diseño genera el 60% de la intención de compra ya que mediante él comunicamos el concepto y el posicionamiento de nuestro negocio y despertamos emociones positivas en nuestros usuarios
+          .jk-item.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon3.png", alt="PÁGINAS RESPONSIVE")
+            .jk-item.box-title
+              h4 PÁGINAS RESPONSIVE
+            .jk-item.box-description
+              p La tendencia multicanal y multiplataforma es esencial para lograr los resultados y cumplir con nuestros objetivos de negocios. En los últimos años el 70% de las visitas se producen a través del celular
+          .jk-item.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon4.png", alt="CÓDIGO LIMPIO")
+            .jk-item.box-title
+              h4 CÓDIGO LIMPIO
+            .jk-item.box-description
+              p La programación de un sitio o página web es fundamental para que los motores de Google entiendan y elijan mostrarnos primero en sus resultados, por eso trabajamos en la estructura web           
+          .jk-item.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon5.png", alt="EMBUDOS DE CONVERSIÓN EFICIENTES")
+            .jk-item.box-title
+              h4 EMBUDOS DE CONVERSIÓN EFICIENTES
+            .jk-item.box-description
+              p Logra resultados (ventas) reales dentro de tu web basando el diseño en el comportamiento y las decisiones concretas y medibles de los usuarios, en base al conocimiento del público.
+        
+        .jk-container.web.web-slider.s-main-space-around.m-hide.l-hide
+          .jk-item.slide.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon1.png", alt="POSICIONAMIENTO SEO")
+            .jk-item.box-title
+              h4 POSICIONAMIENTO SEO
+            .jk-item.box-description
+              p Aumenta el 50% de tus ventas al aparecer en los primeros 3 lugares de los resultados de búsqueda en el momento exacto en que tus potenciales clientes buscan lo que vos ofrecés.
+          .jk-item.slide.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon2.png", alt="DISEÑO CREATIVO")
+            .jk-item.box-title
+              h4 DISEÑO CREATIVO
+            .jk-item.box-description
+              p El diseño genera el 60% de la intención de compra ya que mediante él comunicamos el concepto y el posicionamiento de nuestro negocio y despertamos emociones positivas en nuestros usuarios.
+          .jk-item.slide.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon3.png", alt="PÁGINAS RESPONSIVE")
+            .jk-item.box-title
+              h4 PÁGINAS RESPONSIVE
+            .jk-item.box-description
+              p La tendencia multicanal y multiplataforma es esencial para lograr los resultados y cumplir con nuestros objetivos de negocios. En los últimos años el 70% de las visitas se producen a través del celular.
+          .jk-item.slide.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon4.png", alt="CÓDIGO LIMPIO")
+            .jk-item.box-title
+              h4 CÓDIGO LIMPIO
+            .jk-item.box-description
+              p La programación de un sitio o página web es fundamental para que los motores de Google entiendan y elijan mostrarnos primero en sus resultados, por eso trabajamos en la estructura web.      
+          .jk-item.slide.box.s-100.m-45.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon5.png", alt="EMBUDOS DE CONVERSIÓN EFICIENTES")
+            .jk-item.box-title
+              h4 EMBUDOS DE CONVERSIÓN EFICIENTES
+            .jk-item.box-description
+              p Logra resultados (ventas) reales dentro de tu web basando el diseño en el comportamiento y las decisiones concretas y medibles de los usuarios, en base al conocimiento del público.
+      
+      section.planes-container 
+        .jk-container.planes.s-main-center
+          .jk-item.title.s-100
+            h3 NUESTROS PLANES
+        .jk-container.planes.s-hide
+          .jk-item.box.m-33.m-main-center
+            .jk-item.top
+              h4.box-title LANDING PAGE
+            .jk-item.circle.m-flex-center
+              p.box-price $6.100
+            .jk-item.bottom.m-main-center.m-cross-end
+              p.box-description.m-100
+               |En 10 días <br> Selección de plantilla <br> Selección de servidor <br> Única Página
+              a(href="#contacto").botton ELEGIR PLAN
+          .jk-item.box.m-33.m-main-center
+            .jk-item.top
+              h4.box-title PERSONALIZADO
+            .jk-item.circle.m-flex-center
+              p.box-price $10.200
+            .jk-item.bottom.m-main-center.m-cross-end
+              p.box-description.m-100
+               |En 20 días <br> Estrategia S.E.O <br> Diseño Personalizado <br> Múltiples Páginas
+              a(href="#contacto").botton ELEGIR PLAN
+          .jk-item.box.m-33.m-main-center
+            .jk-item.top
+              h4.box-title E-COMMERCE
+            .jk-item.circle.m-flex-center
+              p.box-price $16.300
+            .jk-item.bottom.m-main-center.m-cross-end
+              p.box-description.m-100
+               |En 40 días <br> Estrategia S.E.O <br> Diseño y Sistema Personalizado  <br> Desarrollo de estrategia
+              a(href="#contacto").botton ELEGIR PLAN
+        
+        .jk-container.planes.s-main-center.m-hide.l-hide
+          .jk-item.box-mobile.box-mobile-landing-page.s-80.s-flex-center
+            .jk-item.no-padding.s-100.box-title.s-flex-center
+              h4 LANDING PAGE
+            .jk-item.no-padding.box-botton.s-flex-center 
+              p ELEGIR PLAN 
+            .jk-item.no-padding.s-100.box-price.s-flex-center
+              p $6.100
+            .jk-item.box-button-description-landing-page
+            .jk-item.no-padding.s-100
+              .jk-item.box-mobile-description-landing-page
+                p En 10 días <br> Selección de plantilla <br> Selección de servidor <br> Única Página
+          .jk-item.box-mobile.box-mobile-personalizado.s-80.s-flex-center
+            .jk-item.no-padding.s-100.box-title.s-flex-center
+              h4 PERSONALIZADO
+            .jk-item.no-padding.box-botton.s-flex-center 
+              p ELEGIR PLAN 
+            .jk-item.no-padding.s-100.box-price.s-flex-center
+              p $10.200
+            .jk-item.box-button-description-personalizado
+            .jk-item.no-padding.s-100
+              .jk-item.box-mobile-description-personalizado.s-80
+                p En 20 días <br> Estrategia S.E.O <br> Diseño Personalizado <br> Múltiples Páginas
+          .jk-item.box-mobile.box-mobile-e-commerce.s-80.s-flex-center
+            .jk-item.no-padding.s-100.box-title.s-flex-center
+              h4 E-COMMERCE
+            .jk-item.no-padding.box-botton.s-flex-center 
+              p ELEGIR PLAN 
+            .jk-item.no-padding.s-100.box-price.s-flex-center
+              p $16.300
+            .jk-item.box-button-description-e-commerce
+            .jk-item.no-padding.s-100  
+              .jk-item.box-mobile-description-e-commerce.s-80
+                p En 40 días <br> Estrategia S.E.O <br> Diseño y Sistema Personalizado  <br> Desarrollo de estrategia
+      section.servicios-container 
+        .jk-container.servicios.s-main-center
+          .jk-item.title.s-100
+            h3 NUESTROS SERVICIOS
+        .jk-container.servicios.s-main-center
+          .jk-item.box.s-80.m-30.l-30.s-main-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon6.png", alt="SOCIAL MEDIA")
+            .jk-item.box-title.s-70.m-100.s-flex-center
+              h4 SOCIAL MEDIA
+            .jk-item.box-description.m-100.s-hide
+              p Estrategias de Community manager y redes sociales en Mendoza.
+            .jk-item.box-price.s-flex-center
+              p $5.500 <br> <span>MENSUAL</span>
+          .jk-item.box.s-80.m-30.l-30.s-flex-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon7.png", alt="PUBLICIDAD ONLINE")
+            .jk-item.box-title.s-70.m-100
+              h4 PUBLICIDAD ONLINE
+            .jk-item.box-description.m-100.s-hide
+              p El mundo del marketing digital está en tus manos. Hace presencia en la seccion web.
+            .jk-item.box-price.s-flex-center
+              p $5.500 <br> <span>MENSUAL</span>
+          .jk-item.box.s-80.m-30.l-30.s-flex-center
+            .jk-item.box-img.s-100
+              img(src="img/index/icon8.png", alt="MANTENIMIENTO, ANALITICA WEB Y SEO")
+            .jk-item.box-title.s-70.m-100
+              h4 MANTENIMIENTO, ANALITICA WEB Y SEO
+            .jk-item.box-description.m-100.s-hide
+              p Aparece primero para tus clientes para que su experiencia sea unica.
+            .jk-item.box-price.s-flex-center
+              p $5.500 <br> <span>MENSUAL</span>
+            
+      section.portfolio-container 
+        .jk-container.portfolio.s-main-center
+          .jk-item.title.s-100
+            h3 PORTFOLIO
+
+  include ../templates/block-footer.pug
