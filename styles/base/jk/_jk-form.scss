@@ -10,6 +10,7 @@
     }
     .form-item{
         position: relative;
+        padding:0;
     }
     
     textarea,
@@ -28,11 +29,9 @@
         width: 100%;
         border-radius: 2px;
         padding: 10px 0;
+        margin:15px 0;
         font-size: 18px;
-        
-        margin:15px;
         color: white;
-
         @media screen and (min-width:getBreakpoint(l) ){
             font-size: 22px;
         }
