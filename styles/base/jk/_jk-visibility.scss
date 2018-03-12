@@ -3,13 +3,13 @@
   $m-max: getBreakpoint(m) - em(1px);
   $l-max: getBreakpoint(l) - em(1px);
   @media screen and (max-width:$m-max ){
-  .s-hide{ display: none;}
+  .s-hide{ display: none !important;}
   }
   @media screen and (min-width:getBreakpoint(m) ) and (max-width:$l-max ){
-  .m-hide{ display: none;}
+  .m-hide{ display: none !important;}
   }
   @media screen and (min-width:getBreakpoint(l) ){
-  .l-hide{ display: none;}
+  .l-hide{ display: none !important;}
   }
   // @media screen and (min-width:getBreakpoint(xl) ){
   // .xl-hide{ display: none; }
