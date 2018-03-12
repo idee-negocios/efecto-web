@@ -122,7 +122,7 @@ require('./slides.min');
 
         console.log(contactData);
 
-        $.post('https://dev.ideenegocios.com.ar:3001/juan-kohler', contactData, function(res) {
+        $.post('https://dev.ideenegocios.com.ar:3001/efecto-web', contactData, function(res) {
           console.log(res);
 
           $('.form').hide('slow', function() {
