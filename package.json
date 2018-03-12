@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp setup"
+    "build": "gulp setup",
+    "deploy": "surge -p ./build --domain webmendoza.com.ar"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "gulp-webpack": "^1.5.0",
+    "surge": "^0.20.1",
     "webpack": "^3.10.0"
   },
   "dependencies": {
