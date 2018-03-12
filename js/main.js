@@ -132,6 +132,11 @@ require('./slides.min');
       }
     });
   });
+
+  $('.button-plan').on('click', function(evt) {
+    const plan = $(this).data().plan;
+    $('#plantilla').val(plan);
+  });
 })();
 
 
