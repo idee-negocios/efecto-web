@@ -1,23 +1,23 @@
-form.jk-form.s-main-center.s-100.l-80(action="" name="jkForm" method="post")
-            .form-item.s-100.m-45
-                input#text1.required(type="text" name="nombre" placeholder="Nombre(*)")
-            .form-item.s-100.m-45
-                input#tel1.required(type="tel" name="celular" placeholder="Teléfono(*)")
-            .form-item.s-100
-                input#email1.required(type="email" name="email" placeholder="E-mail(*)")
-            .form-item.s-100.m-45
-                select#plantilla(name="plantilla")
-                    option(value="null" disabled selected) Plantilla
-                    option(value="landingPage") Landing page
-                    option(value="personalizado") Personalizado
-                    option(value="eCommerce") E-commerce
-            .form-item.s-100.m-45
-                select#plantilla(name="servicio")
-                    option(value="null" disabled selected) Servicio
-                    option(value="socialMedia") Social media
-                    option(value="publicidadOnline") Publicidad online
-                    option(value="eCommerce") Mantenimiento, analitica web y SEO
-            .form-item.s-100
-                textarea#textarea1(name="mensaje" placeholder="Mensaje" rows="5")
-            .form-item.s-100
-                input#submit1.form-button(type="submit" value="Enviar")
+form.form.jk-form.s-main-center.s-100.l-80(name="jkForm")
+  .form-item.s-100.m-45
+      input#text1.required(type="text" name="nombre" placeholder="Nombre(*)")
+  .form-item.s-100.m-45
+      input#tel1.required(type="tel" name="celular" placeholder="Teléfono(*)")
+  .form-item.s-100
+      input#email1.required(type="email" name="email" placeholder="E-mail(*)")
+  .form-item.s-100.m-45
+      select#plantilla(name="plantilla")
+          option(value="null" disabled selected) Plantilla
+          option(value="landingPage") Landing page
+          option(value="personalizado") Personalizado
+          option(value="eCommerce") E-commerce
+  .form-item.s-100.m-45
+      select#plantilla(name="servicio")
+          option(value="null" disabled selected) Servicio
+          option(value="socialMedia") Social media
+          option(value="publicidadOnline") Publicidad online
+          option(value="eCommerce") Mantenimiento, analitica web y SEO
+  .form-item.s-100
+      textarea#textarea1(name="mensaje" placeholder="Mensaje" rows="5")
+  .form-item.s-100
+      input#submit1.form-button(type="submit" value="Enviar")

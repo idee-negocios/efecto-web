@@ -102,6 +102,36 @@ require('./slides.min');
 
   });
 
+  $(document).ready(function() {
+    $('.form').on('submit', function(e) {
+      console.log(e);
+      e.preventDefault();
+      var contactData = $(this).serializeArray();
 
+      var validForm = contactData.every(function(item) {
+        return item.value !== '';
+      });
 
+      if(!validForm) {
+        alert('Algunos campos requeridos están vacíos. Por favor, completelos.');
+      } else {
+        contactData = contactData.reduce((data, item) => {
+          data[item.name] = item.value;
+          return data;
+        }, {});
+
+        console.log(contactData);
+
+        $.post('https://dev.ideenegocios.com.ar:3001/alan-boglioli', contactData, function(res) {
+          console.log(res);
+
+          $('.form').hide('slow', function() {
+            $('.contact-message').show('slow');
+          });
+        });
+      }
+    });
+  });
 })();
+
+
