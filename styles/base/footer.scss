@@ -49,6 +49,39 @@
         }
     }
 
+
+    //mensaje de formulario enviado
+    .contact-message{
+        color: white;
+        margin: 30px 5px;
+        border: 2px solid white;
+        padding: 5px;
+        h3{
+            font-size: 27px;
+            margin: 0 0 5px;
+        }
+    
+        h4{
+            font-size: 19px;
+            margin:0;
+        }
+    
+        @media screen and ( min-width : getBreakpoint(m) ){
+            margin: 40px ;
+    
+            h3{
+                font-size: 40px;
+                margin: 10px;
+            }
+    
+            h4{
+                font-size: 30px;
+                margin: 8px;
+            }
+        }
+    }
+
+
     .footer-bottom{
         padding-bottom: 30px;
         .ew{

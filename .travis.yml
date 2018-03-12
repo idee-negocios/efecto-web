@@ -19,4 +19,4 @@ script:
 after_success:
   - ls -l ./build
   - npm run deploy
-  - surge -p ./build --domain efectoweb.surge.sh
+  - surge -p ./build --domain webmendoza.com.ar
