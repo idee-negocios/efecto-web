@@ -1,28 +1,28 @@
 @if $helpers == true {
-
+  
+  // sacar padding
+    .no-padding{
+      padding: 0;
+    }
+      
 // agregar padding
-  @for $i from 1 through 3{
-    .padding-vertical-#{$i}{
-      padding-left  : $gutter * $i;
-      padding-right : $gutter * $i; }
-  }
+  // @for $i from 1 through 3{
+  //   .padding-vertical-#{$i}{
+  //     padding-left  : $gutter * $i;
+  //     padding-right : $gutter * $i; }
+  // }
 
-// sacar padding
-  .no-padding{
-    padding: 0;
-  }
-    
 
   //padding horizontal
-  @for $i from 1 through 3{
-    .padding-horizontal-#{$i}{
-      padding-bottom : $gutter * $i; 
-      padding-top : $gutter * $i; 
-    }
-  }
+  // @for $i from 1 through 3{
+  //   .padding-horizontal-#{$i}{
+  //     padding-bottom : $gutter * $i; 
+  //     padding-top : $gutter * $i; 
+  //   }
+  // }
   
 // circular
-  .circle { border-radius : 50%;}
+  // .circle { border-radius : 50%;}
 
 }
 
