@@ -17,7 +17,7 @@ body {
 .header{
     width: 100%;
     padding: 70px 10px;
-    background: url("../img/index/header.png") center no-repeat;
+    background: url("../img/index/header.jpg") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0% 90%, 50% 100%, 100% 90%, 100% 0%, 0% 0%);
@@ -243,6 +243,7 @@ body {
             }
             .circle{
                 border: 4px solid getColor(blue,0);
+                
             }
             .bottom{
                 .botton{
@@ -331,6 +332,7 @@ body {
                 height: 120px;
                 width: 120px;
                 box-shadow: getShadow(2);
+                border-radius: 50%;
                 .box-price{
                     color: getColor(blue,0);
                     font-weight: 100;
@@ -594,7 +596,7 @@ body {
         .box-price{
             position: absolute;
             left:0;
-            
+            align-self: flex-end;
             color:getColor(blue,0);
             background-color: #fafafa;
             font-weight: 700;
