@@ -51,6 +51,7 @@ body {
         padding: 15px 0;
         h1{
             font-size: 23px;
+            font-weight: 400;
         }
         @media screen and (min-width:getBreakpoint(m) ){
             padding: 20px 0;
@@ -61,7 +62,7 @@ body {
         @media screen and (min-width:getBreakpoint(l) ){
             padding: 25px 0;
             h1{
-                font-size: 44px;
+                font-size: 38px;
 
             }
         }
@@ -72,7 +73,7 @@ body {
         padding:0;
         font-style: italic;
         h2{
-            font-weight:600;
+            font-weight:400;
         }
         @media screen and (min-width:getBreakpoint(m) ){
             padding:10px 0;
@@ -110,7 +111,7 @@ body {
 
 
 //TITULOS DE SECCIONES
-.web,.planes,.servicios,.portfolio{
+.web,.planes,.servicios,.portfolio,.que-hacemos{
 
     .title{
         display: flex;
@@ -148,7 +149,27 @@ body {
         @media screen and (min-width:getBreakpoint(m) ){
             h3{
                 font-size: 30px;
-                padding:30px 0 50px;
+                padding:30px;
+            }
+        }
+        @media screen and (min-width:getBreakpoint(l) ){
+
+        }
+    }
+    .description{
+        text-align: center;
+        padding: 0 0 15px;
+        p{
+            font-size:16px;
+        }
+        .p-2{
+            font-weight: 700;
+        }
+        @media screen and (min-width:getBreakpoint(m) ){
+            padding: 0 0 40px;
+            p{
+               font-size: 22px;
+               font-weight: 400;
             }
         }
         @media screen and (min-width:getBreakpoint(l) ){
@@ -165,6 +186,31 @@ body {
 }
 
 .web{
+
+    .botton{
+
+        a{
+            
+            background-color: getColor(blue,0);
+            text-align: center;
+            padding:15px 30px;
+            color:white;
+            font-weight: 700;
+            font-size:16px;
+        }
+        text-align: center;
+        padding: 15px 0 30px;;
+        @media screen and (min-width:getBreakpoint(m) ){
+            p{
+                padding: 15px 0 45px;
+            }
+        }
+    }
+
+}
+
+.que-hacemos{
+    
 
     .box{
         padding: 15px 0 20px;
@@ -221,8 +267,6 @@ body {
         }
     }
 }
-
-
 //PLANES (TABLET, PC)
 
 .planes-container{
@@ -287,7 +331,7 @@ body {
 
     .box{
         @media screen and (min-width:getBreakpoint(m) ){
-            min-height: 400px;
+            min-height: 300px;
             position: relative;
             margin:0;
             padding:0;
@@ -316,7 +360,7 @@ body {
                 
             }
             @media screen and (min-width:getBreakpoint(l) ){
-                height: 32%;
+                height: 35%;
                 .box-title{
                     font-size: 26px;
                 }
@@ -343,12 +387,12 @@ body {
             @media screen and (min-width:getBreakpoint(l) ){
                 height: 140px;
                 width: 140px;
-                top: 32%;
+                top:35%;
             }
         }
         .bottom{
             @media screen and (min-width:getBreakpoint(m) ){
-                height: 65%;
+                height: 60%;
                 .box-description{
                     white-space: nowrap;
                     font-size: 14px;
@@ -377,9 +421,9 @@ body {
             }
             @media screen and (min-width:getBreakpoint(l) ){
                 .box-description{
-                    padding-bottom: 50px;
+                    padding-bottom: 30px;
                     text-align: center;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-style: italic;
                     line-height: 34px;
                 }
@@ -525,17 +569,17 @@ body {
 .servicios{
     .box{
         position: relative;
-        padding: 15px 0 20px;
+        padding: 15px;
         border: 2px solid #eeeeee;
         // height: 106px;
         margin-bottom: 15px;
         left:15px;
         background-color: #fefefe;
-
+        
         @media screen and (min-width:getBreakpoint(m) ){
             left:0;
             border:none;
-            height: auto;
+            
         }
         @media screen and (min-width:getBreakpoint(l) ){
  
