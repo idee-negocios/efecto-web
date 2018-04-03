@@ -9,6 +9,18 @@ require('./slides.min');
 
 (() => {
 
+  $(".arrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#web").offset().top
+    }, 1000);
+  });
+
+  $(".contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contacto").offset().top
+    }, 2000);
+  });
+
   $('.web-slider').slidesjs({
     // width: 320,
     // height: 324,
