@@ -5,8 +5,14 @@ body {
 }
 
 //ID PARA LINK
-#web{
-    transition: 2s;
+#que-hacemos,#web,#contacto,#nuestros-sitios,#nuestros-servicios{
+    position: relative;
+    top:-55px;
+
+    @media screen and (min-width:getBreakpoint(m) ){
+        top:-80px;
+    
+    }
 }
 
 //HEADER

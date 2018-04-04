@@ -1,0 +1,211 @@
+// @import 'jk.scss'; //contiene framework JK y fuentes descargadas
+
+.navbar,
+.navbar-item,
+.navbar-menu {
+  display: flex;
+}
+
+.navbar {
+  transition: .7s;
+  z-index: 10;
+  width: 100%;
+  padding: 5px 10px;  
+  top: 0;
+  min-height: 50px;
+  position: fixed;
+  background-color: getColor(white, 0);
+  @media screen and (min-width: getBreakpoint(m)) {
+      padding: 10px;
+    }
+    @media screen and (min-width: getBreakpoint(l)) {
+    background-color: rgba(white,.5);
+    padding: 10px 30px;
+    min-height: 70px;
+  }
+  ul {
+    font-family: 'Open Sans', sans-serif;
+    z-index: 10;
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    .active {
+      a {}
+    }
+  }
+  a {
+    display: block;
+  }
+  li {
+    
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px;
+    &:hover {
+      cursor: pointer;
+      transition: .2s;
+      &>a {
+        transition: .2s;
+      }
+    }
+  }
+  .navbar-menu>li>a {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+    font-size:17px;
+  }
+  .navbar-item {
+    flex-shrink: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .navbar-logo {
+    z-index: 10;
+    width: 140px;
+    @media screen and (min-width: getBreakpoint(m)) {
+      width: 200px;
+    }
+  }
+}
+
+//toggle
+.navbar-toggle {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar-toggle span {
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 3px;
+  transition: 0.3s all ease;
+  height: 2px;
+  width: 18px;
+  background: black;
+} 
+
+
+
+
+
+//ASIDE
+.navbar-aside-container {
+  position: fixed;
+  z-index: -10;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.navbar-aside{
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  width: 75vw;
+  max-width: 300px;
+  padding: 30px 0;
+  margin: 0;
+  overflow: scroll;
+  left: -80vw;
+
+  ul {
+    padding: 0px;
+    .active {
+      background-color: red;
+      
+    }
+  }
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  li {
+    padding: 2px 15px;
+    list-style: none;
+    margin: 12px 0;
+    &:hover {
+      background-color: getColor(grey,3);
+      transition: .2s;
+    }
+    a {
+      padding: 0 5px;
+      display: block;
+      color: black;
+    }
+  }
+  // .subnivel-1 {
+  //   padding-left: $gutter * 2;
+  // }
+  // .subnivel-2 {
+  //   padding-left: $gutter * 3;
+  // }
+  // .subnivel-3 {
+  //   padding-left: $gutter * 4;
+  // }
+  .navbar-aside-item {
+    padding:  15px;
+  }
+  .navbar-aside-logo {
+    img {
+      padding: 5px 15px;
+      max-width: 370px;
+    }
+  }
+  .navbar-list-divider {
+    border: 0.5px solid grey;
+    position: relative;
+  }
+  .navbar-aside-icon {
+    font-size: 22px;
+    line-height: 20px;
+    color: black; 
+    padding: 0 5px;
+  }
+
+  //iconos redes sociales
+  a[class *= "icon"]{
+    font-size: 18px;
+    color: white;
+    padding: 8px;
+    background-color: getColor(blue,6);;
+    border-radius: 50%;
+    margin:0 4px;
+} 
+  .icon-facebook{
+                
+  }
+  .icon-instagram{
+      
+  }
+  .icon-linkedin{
+      
+  }
+}
+  
+.navbar-aside-show{
+  left:0vw;
+  transition:0.5s;
+  z-index: 140;
+}
+
+.navbar-aside-container-show{
+  opacity: 1;
+  transition: 0.4s;
+  z-index: 150;
+  height: 100% !important;
+}
+
+
+
+//scroll
+.navbar-scroll{
+    background-color: rgba(white,1);
+}

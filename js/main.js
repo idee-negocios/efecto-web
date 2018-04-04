@@ -1,5 +1,5 @@
 import $ from 'jquery';
-// import * as Navbar from './navbar';
+import * as Navbar from './navbar';
 
 window.$ = $;
 window.jQuery = $;
@@ -21,7 +21,7 @@ require('./slides.min');
     }, 2000);
   });
 
-  $('.web-slider').slidesjs({
+  $('.que-hacemos-slider').slidesjs({
     // width: 320,
     // height: 324,
     play: {
