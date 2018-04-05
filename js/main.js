@@ -9,6 +9,7 @@ require('./slides.min');
 
 (() => {
 
+  //FUNCIONES SCROLLTOP
   $(".arrow").click(function() {
     $('html, body').animate({
         scrollTop: $("#web").offset().top
@@ -21,6 +22,42 @@ require('./slides.min');
     }, 2000);
   });
 
+  $(".arrow").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#web").offset().top
+    }, 1000);
+  });
+  
+  //funciones scrolltop para barra de navegacion
+  $(".navbar-web").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#web").offset().top
+    }, 1000);
+  });
+  $(".navbar-que-hacemos").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#que-hacemos").offset().top
+    }, 1000);
+  });
+  $(".navbar-nuestros-sitios").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#nuestros-sitios").offset().top
+    }, 1000);
+  });
+  $(".navbar-nuestros-servicios").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#nuestros-servicios").offset().top
+    }, 1000);
+  });
+  $(".navbar-contacto").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#contacto").offset().top
+    }, 1000);
+  });
+
+
+
+  //INICIALIZACIONES DE SLIDER
   $('.que-hacemos-slider').slidesjs({
     // width: 320,
     // height: 324,
@@ -39,7 +76,7 @@ require('./slides.min');
   });
 
 
-  //variables y funciones para planes (mobile)
+  //Variables y funciones para planes (mobile)
   let landingPageActive = false;
   let personalizadoActive = false;
   let eCommerceActive  = false;
