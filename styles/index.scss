@@ -212,6 +212,10 @@ body {
             font-weight: 700;
             font-size: 15px;
             @media screen and (min-width:getBreakpoint(m) ){
+                font-size: 17px;
+
+            }
+            @media screen and (min-width:getBreakpoint(l) ){
                 font-size: 18px;
 
             }
@@ -364,7 +368,7 @@ body {
 
     .box{
         @media screen and (min-width:getBreakpoint(m) ){
-            min-height: 300px;
+            min-height: 400px;
             position: relative;
             margin:0;
             padding:0;
@@ -380,7 +384,7 @@ body {
 
         .top{
             @media screen and (min-width:getBreakpoint(m) ){    
-                height: 35%;
+                height: 40%;
                 text-align: center;
                 .box-title{
                     color: white;
@@ -403,7 +407,7 @@ body {
             @media screen and (min-width:getBreakpoint(m) ){
                 text-align: center;
                 position: absolute;
-                top: 35%;
+                top: 40%;
                 transform: translateY(-50%);
                 background-color: white;
                 height: 120px;
@@ -450,6 +454,7 @@ body {
             @media screen and (min-width:840px ){
                 .box-description{
                     font-size: 18px;
+                    padding-bottom: 20px;
                 }
             }
             @media screen and (min-width:getBreakpoint(l) ){
@@ -504,7 +509,7 @@ body {
     }
 
     .box-mobile{
-        padding: 15px;
+        padding: 10px;
         margin:10px 0;
         // border-radius: 15px;
         color:white;
@@ -513,7 +518,7 @@ body {
 
         .box-title{
             text-align: center;
-            font-size: 18px;    
+            font-size: 17px;    
             font-weight: 600;
             padding: 5px 5px 15px;
             white-space: nowrap;
