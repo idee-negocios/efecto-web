@@ -16,7 +16,6 @@ body {
 }
 
 //HEADER
-
 .header-container{
     padding:0;
 }
@@ -95,8 +94,6 @@ body {
 }
 
 //ARROW
-
-
 .arrow{
     cursor: pointer;
     padding:10px;
@@ -174,7 +171,7 @@ body {
             font-weight: 700;
         }
         @media screen and (min-width:getBreakpoint(m) ){
-            padding: 0 0 40px;
+            padding: 0 0 30px;
             p{
                font-size: 22px;
                font-weight: 400;
@@ -194,7 +191,32 @@ body {
 }
 
 .web{
+    .metodos-pago{
+        padding: 15px 0;
+        @media screen and (min-width:getBreakpoint(m) ){
+            margin:15px 0;
+        }
+        .metodo{
+            padding:10px;
+            margin:0;
+        }
+        img{
+            height: 70px;
+            width: auto;
+            @media screen and (min-width:getBreakpoint(m) ){
+                height: 90px;
+            }
+        }
+        p{
+            display: block;
+            font-weight: 700;
+            font-size: 15px;
+            @media screen and (min-width:getBreakpoint(m) ){
+                font-size: 18px;
 
+            }
+        }
+    }
     .botton{
 
         a{
