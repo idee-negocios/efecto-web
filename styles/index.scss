@@ -27,12 +27,14 @@ body {
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0% 90%, 50% 100%, 100% 90%, 100% 0%, 0% 0%);
+    margin-top: 30px;
     @media screen and (min-width:getBreakpoint(m) ){
         padding: 100px 80px; 
     }
     @media screen and (min-width:getBreakpoint(l) ){
         clip-path: polygon(0% 80%, 50% 100%, 100% 80%, 100% 0%, 0% 0%);
         padding: 140px; 
+        margin-top: 0; 
     }
     .img{
         padding: 0 0 10px;
